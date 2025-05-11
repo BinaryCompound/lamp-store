@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: inherit;
+  }
+  
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }

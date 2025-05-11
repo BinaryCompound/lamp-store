@@ -1,0 +1,338 @@
+:root {
+    /* основной цвет */
+    --main-text-color: rgb(35, 24, 21);
+    --gray-text-color: rgb(128, 128, 128);
+    --white-text-color: rgb(255, 255, 255);
+    --black-bg-color: rgb(12, 12, 12);
+    --primary-bg-button: rgb(0, 0, 0);
+    --orange-bg-button: rgb(228, 83, 2);;
+    /* Начертание */
+    --font-bold: 700;
+    --font-regular: 400;
+    --font-semibold: 600;
+  }
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    margin: 0px 260px;
+}
+
+.burger-menu {
+    width: 26px;
+    height: 17px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 0;
+    padding-top: 7px;
+    padding-right: 4px;
+    margin: 0;
+}
+
+
+.burger-line {
+    width: 100%;
+    height: 4px;
+    background: var(--black-bg-color);
+    border-radius: 0; /* Убираем скругление углов */
+    transition: all 0.3s ease;
+}
+
+.pre-navigation_container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+    padding: 8px 260px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: var(--font-regular);
+    background-color: var(--main-text-color);
+    color: var(--white-text-color);
+}
+
+.navigation-panel_container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-top: 11px;
+}
+
+.list-links_container {
+    display: flex;
+    font-size: 16px;
+    font-weight: var(--font-semibold); /* должен быть semibold, но не подходит */
+    text-transform: uppercase;
+    gap: 103px;
+    line-height: 100%;
+    justify-content: flex-end;
+    padding-right: 110px;
+}
+
+.search_and_cart {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.counter {
+    position: absolute;
+    top: 0px;
+    color: rgb(26, 26, 26);
+    background-color: var(--white-text-color);
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+.basket_button {
+    align-items: center;
+    gap: 8px;
+    padding: 4px 19px;
+    font-weight: var(--font-regular);
+    font-size: 16px;
+    display: flex;
+    border-radius: 100px;
+    color: var(--white-text-color);
+    background-color: var(--primary-bg-button);
+}
+
+.basket-icon_container {
+    position: relative;
+    top: 1px;
+}
+
+.basket-icon_container img {
+    height: 32px;
+    width: 32px;
+}
+
+.input-with-icon {
+    max-width: 170px;
+    padding: 0px 20px;
+    background-image: url('../pictures/icons/scope_icon.svg');
+    background-repeat: no-repeat;
+    background-position: right 12px center; 
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 88.64px;
+  }
+
+.product-card {
+    text-align: center;
+    max-width: 320px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+    
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+}
+    
+.product-card h2 {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: var(--font-bold);
+    color: var(--main-text-color);
+    padding: 12px 0px 12px;
+    text-align: left;
+}
+
+.product-card p {
+    display: flex;
+    gap: 20px;
+    font-family: Lato;
+    font-size: 22px;
+    color: var(--main-text-color);
+    font-weight: var(--font-bold);
+    text-align: left;
+}
+
+.badge {
+    position: absolute;
+    color: var(--white-text-color);
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: var(--font-semibold);
+    background-color: var(--black-bg-color);
+    padding: 7px;
+    border-radius: 20px;
+    min-width: 126px;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.content {
+    padding: 68px 260px 58px;
+}
+
+.section_header {
+    font-family: 'korataki';
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 46px 40px;
+    padding-top: 44px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-button {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: var(--orange-bg-button);
+  color: var(--white-text-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+}
+
+.background_button {
+    min-width: 320px;
+    min-height: 88px;
+    padding: 20px 31px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 20px 20px;
+    background: rgba(245, 245, 245, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Плавное появление */
+}
+
+.product-card:hover .background_button {
+     opacity: 1;
+}
+
+.old_price {
+    color: rgb(128, 128, 128);
+    text-decoration: line-through;
+}
+.new_price {
+    color: var(--orange-bg-button);
+}
+
+.footer_container {
+    display: grid;
+    padding: 60px 260px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(12, 12, 12);
+    color: var(--white-text-color);
+    font-family: 'Lato';
+}
+
+.text-logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 52px;
+    font-size: 16px;
+}
+
+.text_under_logo {
+    line-height: 130%;
+    color: var(--gray-text-color);
+}
+
+.privacy_policy {
+    text-decoration: underline;
+}
+
+.address-contacts_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    gap: 32px
+}
+
+.address_container {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-left: 83px;
+}
+
+.contacts_container {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header_address, .header_contact, .header_services {
+    font-weight: var(--font-bold);
+    font-size: 18px;
+}
+
+.mail-phone_container {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.services_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_services {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list_container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 41px;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 73px;
+}
+
+.legal_links {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    font-size: 16px;
+    align-items: flex-end;
+    color: var(--gray-text-color);
+}
+
+.payment-icon_container {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}

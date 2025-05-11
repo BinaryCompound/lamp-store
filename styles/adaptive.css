@@ -1,0 +1,261 @@
+@media (min-width: 1460px) and (max-width: 1702px) {
+    nav {
+        margin: 0 180px;
+    }
+    .pre-navigation_container {
+        padding: 8px 180px;
+    }
+
+    .basket_button {
+        gap: 5px;
+        background-color: var(--main-text-color);
+    }
+
+    .search_and_cart {
+        gap: 25px;
+    }
+
+    .list-links_container {
+        padding-right: 70px;
+    }
+
+    .content {
+        padding: 68px 180px 62px;
+    }
+
+    .section_header {
+        font-size: 40px;
+    }
+    
+    .cards_container {
+        gap: 26px 30px;
+    }
+
+    .footer_container {
+        padding: 57px 180px;
+    }
+
+    .white_logo {
+        padding-top: 8px;
+        height: 65px;
+    }
+
+    .address-contacts_container {
+        gap: 35px;
+    }
+
+    .address_container {
+        padding-left: 88px;
+    }
+
+    .contacts_container {
+    padding-left: 88px;
+    }
+
+    .list_container {
+        gap: 10px;
+        padding-left: 6px;
+    }
+
+    .legal_links {
+        gap: 21px;
+    }
+
+    .footer_links {
+        gap: 75px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 1460px) {
+
+    .search_and_cart, .list-links_container, .pre-navigation_container  {
+        display: none;
+    }
+
+    nav {
+        margin: 10px 44px;
+    }
+
+    .black_logo {
+        height: 37px;
+    }
+
+    .navigation-panel_container {
+        display: flex;
+        padding-top: 0px;
+        gap: 508px;
+    }
+
+    .content {
+        padding: 50px 44px 46px;
+    }
+
+    .section_header {
+        font-size: 32px;
+    }
+
+
+    .cards_container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 44px;
+        gap: 13px
+    }
+
+    .white_logo {
+        height: 48px;
+    }
+
+    .address-contacts_container {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .address_container {
+         padding: 1px;
+    }
+
+    .list_container {
+        gap: 10px
+    }
+
+    .list_services {
+        gap: 22px;
+    }
+
+    .footer_links {
+        align-items: flex-start;
+    }
+
+    .legal_links {
+        align-items: flex-start;
+        padding-top: 57px;
+    }
+
+    .contacts_container {
+        padding-left: 0px;
+    }
+
+    .text_under_logo {
+        font-size: 16px;
+    }
+
+    .payment_methods {
+        display: flex;
+        gap: 203px;
+        padding-top: 25px;
+        padding-left: 9px;
+    }
+
+    .address-contacts-services_container {
+        display: flex;
+        padding-top: 16px;
+    }   
+
+}
+
+@media (min-width: 320px) and (max-width: 390px){
+
+    nav {
+        margin: 7px 35px;
+    }
+    
+    .payment_methods {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footer_links {
+        gap: 56px;
+        padding-left: 0px;
+    }
+
+    .section_header {
+        font-size: 24px;
+    }
+
+    .product-card h2 {
+        font-size: 16px;
+        padding: 0px 0px 8px;
+    }
+
+    .product-card p {
+        font-size: 16px;
+    }
+
+    .legal_links {
+        padding-top: 0px;
+    }
+
+    .address-contacts_container {
+        flex-direction: column;
+    }
+
+    .address_container {
+        gap: 5px
+    }
+    
+    .address-contacts-services_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .list_container {
+        padding-left: 0px;
+    }
+
+    .services_container {
+        align-items: flex-start;
+    }
+
+    .badge {
+        padding: 1px;
+        min-width: 70px;
+        top: 11px;
+    }
+
+    .background_button {
+        min-width: 155px;
+        min-height: 45px;
+        padding: 15px 7px;
+    }
+
+    .overlay-button {
+        width: 90%;
+        padding: 5px 4px;
+    }
+
+    .content {
+        padding: 43px 35px 46px;
+    }
+
+    .cards_container {
+        gap: 30px 10px;
+        padding-top: 26px;
+    }
+
+    .black_logo {
+        max-width: 175%;
+    }
+
+    .footer_container {
+        padding: 40px 37px
+    }
+
+    .address-contacts_container {
+        gap: 20px;
+    }
+
+    .contacts_container {
+        gap: 6px;
+    }
+
+    .list_services {
+        gap: 13px;
+    }
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./Lato-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./Lato-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./Lato-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'korataki';
+    src: url('./korataki.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

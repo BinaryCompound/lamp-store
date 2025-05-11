@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./font/font.css">
+    <link rel="stylesheet" href="./styles/adaptive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="pre-navigation_container">
+            <p>Доставка и оплата</p>
+            <p>Гарантия и возврат</p>
+            <p>EN</p>
+        </div>
+        <nav class="navigation-panel_container">
+            <img src="./pictures/black_logo.svg" alt="" class="black_logo">
+            <button class="burger-menu" aria-label="Открыть меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+            <ul class="list-links_container">
+                <li><a href="">Каталог</a></li>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <div class="search_and_cart">
+                <input type="text" placeholder="Лампы" class="input-with-icon">
+                <button class="basket_button">
+                    <div class="basket-icon_container">
+                        <img src="./pictures/icons/basket_icon.svg" alt="">
+                        <span class="counter">3</span>
+                    </div>
+                    <span>Корзина</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1 class="section_header">Результаты поиска</h1>
+        <div class="cards_container">
+            <div class="product-card">
+                <div class="badge">
+                    <span>Акция</span>
+                </div>
+                <div class="image-container">
+                    <img src="./pictures/images/1.png" alt="Описание изображения">
+                    <div class="background_button">
+                        <button class="overlay-button">Подробнее</button>
+                    </div>
+                </div>
+                <h2>Встраиваемый светильник Markt</h2>
+                <p> <span class="new_price">3 490 ₽</span><span class="old_price">5 060 ₽</span></p>
+            </div>
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="./pictures/images/2.png" alt="Описание изображения">
+                    <div class="background_button">
+                        <button class="overlay-button">Подробнее</button>
+                    </div>
+                </div>
+                <h2>Линейный светильник ARG</h2>
+                <p>6 700 ₽</p>
+            </div>
+            <div class="product-card">
+                <div class="badge">
+                    <span>Акция</span>
+                </div>
+                <div class="image-container">
+                    <img src="./pictures/images/3.png" alt="Описание изображения">
+                    <div class="background_button">
+                        <button class="overlay-button">Подробнее</button>
+                    </div>
+                </div>
+                <h2>Сведодиодный светильник </h2>
+                <p><span class="new_price">5 060 ₽</span> <span class="old_price" id="old_price">6 060 ₽</span></p>
+            </div>
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="./pictures/images/4.png" alt="Описание изображения">
+                    <div class="background_button">
+                        <button class="overlay-button">Подробнее</button>
+                    </div>
+                </div>
+                <h2>Встраиваемый светильник Markt</h2>
+                <p>3 490 ₽</p>
+            </div>
+            <div class="product-card">
+                <div class="badge">
+                    <span>Акция</span>
+                </div>
+                <div class="image-container">
+                    <img src="./pictures/images/2.png" alt="Описание изображения">
+                    <div class="background_button">
+                        <button class="overlay-button">Подробнее</button>
+                    </div>
+                </div>
+                <h2>Линейный светильник ARG</h2>
+                <p><span class="new_price">6 700 ₽</span><span class="old_price">6 060 ₽</span></p>
+            </div>
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="./pictures/images/3.png" alt="Описание изображения">
+                    <div class="background_button">
+                        <button class="overlay-button">Подробнее</button>
+                    </div>
+                </div>
+                <h2>Сведодиодный светильник</h2>
+                <p>5 060 ₽</p>
+            </div>
+            <div class="product-card">
+                <div class="badge">
+                    <span>Акция</span>
+                </div>
+                <div class="image-container">
+                    <img src="./pictures/images/4.png" alt="Описание изображения">
+                    <div class="background_button">
+                        <button class="overlay-button">Подробнее</button>
+                    </div>
+                </div>
+                <h2>Встраиваемый светильник Markt</h2>
+                <p><span class="new_price">3 490 ₽</span><span class="old_price">6 060 ₽</span></p>
+            </div>
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="./pictures/images/2.png" alt="Описание изображения">
+                    <div class="background_button">
+                        <button class="overlay-button">Подробнее</button>
+                    </div>
+                </div>
+                <h2>Линейный светильник ARG</h2>
+                <p>6 700 ₽</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer_container">
+        <div class="text-logo_container">
+            <img src="./pictures/white_logo.svg" alt="" class="white_logo">
+            <p class="text_under_logo">Этот сайт защищен от спама службой reCAPTCHA Google. <a href=""
+                    class="privacy_policy">Политика конфиденциальности/Условия
+                    предоставления
+                    услуг</a></p>
+        </div>
+
+        <div class="address-contacts_container">
+            <div class="address_container">
+                <h3 class="header_address">Адрес</h3>
+                <p class="text_address">Текст, Текст, Текст</p>
+            </div>
+            <div class="contacts_container">
+                <h3 class="header_contact">Контакты</h3>
+                <div class="mail-phone_container">
+                    <a href="">Email:&nbsp;urban.dwelling@yandex.com</a>
+                    <p>Телефон: 8 (999) 999-99-99</p>
+                </div>
+            </div>
+        </div>
+        <div class="services_container">
+            <div class="list_container">
+                <h3 class="header_services">Услуги</h3>
+                <ul class="list_services">
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Доставка и оплата</a></li>
+                    <li><a href="">Гарантия и возврат</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_links">
+            <div class="legal_links">
+                <a href="">Публичная оферта</a>
+                <a href="">Политика персональных данных</a>
+            </div>
+            <div class="payment_methods">
+                <div class="payment-icon_container">
+                    <img src="./pictures/mir_logo.svg" alt="Карта мир">
+                    <img src="./pictures/visa_logo.svg" alt="Карта виза">
+                    <img src="./pictures/mastercard.svg" alt="Карта мастер">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
