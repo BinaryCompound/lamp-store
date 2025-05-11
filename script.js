@@ -29,15 +29,17 @@ function toggleElement() {
     }
 }
 
+let textUnderLogoWrapper = null;
+
 function relocateText() {
     const isInRange = window.innerWidth >= 390 && window.innerWidth <= 770;
 
     if (isInRange && textUnderLogo.parentElement !== containerTextUnderLogo) {
-        const textUnderLogoWrapper = document.createElement('div');
+        if (!textUnderLogoWrapper) {
+            textUnderLogoWrapper = document.createElement('div');
+        }
         textUnderLogoWrapper.appendChild(textUnderLogo);
         containerTextUnderLogo.appendChild(textUnderLogoWrapper);
-    } else if (!isInRange && textUnderLogo.parentElement !== originalParentLogo) {
-        originalParentLogo.appendChild(textUnderLogo);
     }
 }
 
@@ -47,7 +49,7 @@ const originalParentLegal = legalLinks.parentElement;
 
 function relocateLegalLinks() {
     const currentWidth = window.innerWidth;
-    
+
     if (currentWidth <= 770 && currentWidth !== 390 && legalLinks.parentElement !== address) {
         address.appendChild(legalLinks);
     } else if ((currentWidth > 770 || currentWidth === 390) && legalLinks.parentElement !== originalParentLegal) {
@@ -92,15 +94,16 @@ function wrapElements() {
     }
 }
 
-// Вызываем при загрузке и при изменении размера окна
-wrapElements();
-window.addEventListener('resize', wrapElements);
+window.addEventListener('resize', () => {
+    toggleElement();
+    relocateText();
+    relocateLegalLinks();
+    wrapElements();
+});
 
-window.addEventListener('resize', relocateLegalLinks);
-window.addEventListener('DOMContentLoaded', relocateLegalLinks);
-
-// Добавляем оба обработчика по-отдельности
-window.addEventListener('resize', toggleElement);
-window.addEventListener('resize', relocateText);
-window.addEventListener('DOMContentLoaded', toggleElement);
-window.addEventListener('DOMContentLoaded', relocateText);
+window.addEventListener('DOMContentLoaded', () => {
+    toggleElement();
+    relocateText();
+    relocateLegalLinks();
+    wrapElements();
+});

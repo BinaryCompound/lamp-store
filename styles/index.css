@@ -5,7 +5,7 @@
     --white-text-color: rgb(255, 255, 255);
     --black-bg-color: rgb(12, 12, 12);
     --primary-bg-button: rgb(0, 0, 0);
-    --orange-bg-button: rgb(228, 83, 2);;
+    --orange-bg-button: rgb(228, 83, 2);
     /* Начертание */
     --font-bold: 700;
     --font-regular: 400;
@@ -32,9 +32,7 @@ nav {
     background: transparent;
     border: none;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+    display: none;
     padding: 0;
     padding-top: 7px;
     padding-right: 4px;

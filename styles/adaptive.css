@@ -76,6 +76,12 @@
         margin: 10px 44px;
     }
 
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
     .black_logo {
         height: 37px;
     }
