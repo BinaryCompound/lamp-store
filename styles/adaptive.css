@@ -83,7 +83,7 @@
     .navigation-panel_container {
         display: flex;
         padding-top: 0px;
-        gap: 508px;
+        justify-content: space-between;
     }
 
     .content {
